@@ -7,12 +7,17 @@ public class Main {
     }
 
     public void test() {
-
-        System.out.println(translateIntToChar(translateCharToInt('Æ')));
+        System.out.println(translateCharToInt('A'));
+        System.out.println(translateCharToInt('a'));
+        System.out.println(translateCharToInt(' '));
+        System.out.println(translateCharToInt('Æ'));
+        System.out.println();
         System.out.println(translateIntToChar(2));
         System.out.println(translateIntToChar(5));
         System.out.println(translateIntToChar(0));
         System.out.println(translateIntToChar(234));
+        System.out.println();
+        System.out.println(translateIntToChar(translateCharToInt('Æ')));
     }
 
 
