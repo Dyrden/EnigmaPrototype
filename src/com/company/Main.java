@@ -7,11 +7,12 @@ public class Main {
     }
 
     public void test() {
-        System.out.println(encryptCharToInt('B'));
-        System.out.println(encryptCharToInt('Æ'));
-        System.out.println(encryptCharToInt('ø'));
-        System.out.println(encryptCharToInt(' '));
-        System.out.println(encryptCharToInt('A'));
+
+
+        System.out.println(encryptIntToChar(2));
+        System.out.println(encryptIntToChar(5));
+        System.out.println(encryptIntToChar(0));
+        System.out.println(encryptIntToChar(234));
     }
 
 
@@ -48,6 +49,41 @@ public class Main {
             case 'Ø' -> {return 28;}
             case 'Å' -> {return 29;}
             default -> {return -1;}
+        }
+    }
+    public char encryptIntToChar(int num) {
+        switch (num) {
+            case 0 -> {return ' ';}
+            case 1 -> {return 'A';}
+            case 2 -> {return 'B';}
+            case 3 -> {return 'C';}
+            case 4 -> {return 'D';}
+            case 5 -> {return 'E';}
+            case 6 -> {return 'F';}
+            case 7 -> {return 'G';}
+            case 8 -> {return 'H';}
+            case 9 -> {return 'I';}
+            case 10 -> {return 'J';}
+            case 11 -> {return 'K';}
+            case 12 -> {return 'L';}
+            case 13 -> {return 'M';}
+            case 14 -> {return 'N';}
+            case 15 -> {return 'O';}
+            case 16 -> {return 'P';}
+            case 17 -> {return 'Q';}
+            case 18 -> {return 'R';}
+            case 19 -> {return 'S';}
+            case 20 -> {return 'T';}
+            case 21 -> {return 'U';}
+            case 22 -> {return 'V';}
+            case 23 -> {return 'W';}
+            case 24 -> {return 'X';}
+            case 25 -> {return 'Y';}
+            case 26 -> {return 'Z';}
+            case 27 -> {return 'Æ';}
+            case 28 -> {return 'Ø';}
+            case 29 -> {return 'Å';}
+            default -> {return '\u0000';}
         }
     }
 }
