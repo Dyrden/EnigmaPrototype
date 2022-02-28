@@ -8,15 +8,15 @@ public class Main {
 
     public void test() {
 
-
-        System.out.println(encryptIntToChar(2));
-        System.out.println(encryptIntToChar(5));
-        System.out.println(encryptIntToChar(0));
-        System.out.println(encryptIntToChar(234));
+        System.out.println(translateIntToChar(translateCharToInt('Æ')));
+        System.out.println(translateIntToChar(2));
+        System.out.println(translateIntToChar(5));
+        System.out.println(translateIntToChar(0));
+        System.out.println(translateIntToChar(234));
     }
 
 
-    public int encryptCharToInt(char ch) {
+    public int translateCharToInt(char ch) {
         switch (ch) {
             case ' ' -> {return 0;}
             case 'A' -> {return 1;}
@@ -51,7 +51,7 @@ public class Main {
             default -> {return -1;}
         }
     }
-    public char encryptIntToChar(int num) {
+    public char translateIntToChar(int num) {
         switch (num) {
             case 0 -> {return ' ';}
             case 1 -> {return 'A';}
